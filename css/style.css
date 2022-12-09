@@ -1,0 +1,828 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*
+.navbar {
+    background-color: white;
+    text-shadow: .2rem .2rem .4rem #cadbb9;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 6px 9px #989a99;
+    float: right;
+    width: 100px;
+    display: block;
+}
+*/
+
+.logo img{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.background {
+    background: rgba(255, 253, 253, 0.7)url(../images/blogpic2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 85vh;
+}
+
+.firsthalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secndhalf {
+    width: 30%;
+}
+
+.text-big {
+    font-size: 41px;
+    color: #ffffffc2;
+}
+
+.text-small {
+    font-size: 18px;
+}
+
+.btn1{
+    padding: 8px 20px;
+    /* border-radius: 50px;
+    margin: 8px 3px;
+    border: 2px solid white;
+    /* font-size: 18px; */
+    background: none;
+    cursor: pointer;
+    border: 2px solid grey;
+    color: white;
+    background-color: rgb(46, 47, 47);
+    box-shadow: 0px 6px 9px #989a99;
+}
+
+.box-main {
+    display: flex;
+    /* justify-content: center;*/
+    align-items: left;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 100%;
+}
+
+.paras {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    color: #6351ce;
+    font-family: 'Qwitcher Grypen', cursive;
+    background-color: rgb(255, 255, 254);
+}
+
+.para {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.parag {
+    color: #6351ce;
+    text-align: center;
+    /*margin-top: 10px;*/
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 30px;
+}
+
+.star {
+    height: 100px;
+    width: 100px;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    text-align: center;
+    background-color: #6351ce;
+    color: white;
+
+}
+
+.star::before {
+    display: inline-block;
+    height: 100%;
+    background: blue;
+    vertical-align: middle;
+    content: '';
+}
+
+.star-main1 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-left: 50px;
+}
+
+.star-main2 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-left: 50px;
+}
+
+.star-main3 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-left: 50px;
+}
+
+.star-main4 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-left: 50px;
+}
+
+.min {
+    color: #347c04;
+    font-family: 'Titan One', cursive;
+    justify-content: center;
+}
+
+.max {
+    color: black;
+}
+
+#w3-button {
+    display: block;
+    margin: auto;
+}
+
+
+.cards {
+    width: 20%;
+    background-color: rgb(182, 179, 179);
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.cards:hover {
+    box-shadow: 2px 2px 10px black;
+
+}
+
+.cards2 {
+    width: 20%;
+    background-color: grey;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.cards2:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+.main {
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.title {
+    text-align: center;
+}
+
+.des {
+    text-align: center;
+    padding: 4px;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.head {
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: 'Qwitcher Grypen', cursive;
+    text-align: center;
+    color: #6351ce;
+}
+
+.mid {
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Rubik Moonrocks', cursive;
+    text-align: center;
+    display: block;
+}
+
+.imgc {
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+
+.cimg {
+    width: 100%;
+    border-radius: 50%;
+    align-items: center;
+    clip-path: circle();
+}
+
+.column {
+    float: left;
+    width: 32%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: auto;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.mb-4 a {
+    border-radius: 36px;
+}
+
+
+
+
+/*--Sm-Mobiles--*/
+
+@media (max-width: 320px) and (min-width: 0px){
+
+  
+.background{
+    height: 40vh;
+}
+
+.text-big{
+    font-size: 10px;
+}
+
+.text-small{
+    font-size: 5px;
+}
+
+.btn1{
+    padding: 0px,10px;
+}
+
+.heading{
+    font-size: 20px;
+}
+
+.Explain{
+    font-size: 13px;
+}
+
+.parag p{
+    font-size: 13px;
+}
+
+.min{
+    font-size: 10px;
+}
+
+.max{
+    font-size: 7px;
+}
+
+.star-main1{
+    justify-content: inline-block;
+}
+
+#w3-button {
+    display: block;
+    margin: auto;
+    padding: 0px 4px;
+}
+
+.title h1{
+    font-size: 8px;
+}
+
+.des p{
+    font-size: 5px;
+    margin-bottom: 1px;
+}
+
+.des button{
+    padding: 0px;
+    font-size: 5px;
+}
+
+.head{
+    font-size: 15px;
+}
+
+.mid{
+    font-size: 10px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.btn{
+    padding: 0px,10px;
+}
+
+.text-white{
+    font-size: 10px;
+    align-items: center;
+}
+
+}
+
+
+/*--Medium Mobiles--*/
+
+@media(max-width: 375px) and (min-width: 320px){
+
+    .background{
+        height: 46vh;
+    }
+
+    .text-big{
+        font-size: 9px;
+    }
+
+    .text-small{
+        font-size: 5px;
+    }
+
+    button.btn1{
+        padding: 0px,7px;
+    }
+
+    .heading{
+        font-size: 25px;
+        margin-bottom: -12px;
+    }
+
+    .Explain{
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .paras{
+        margin-top: 15px;
+    }
+
+    .parag p{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    
+    .min{
+        font-size: 10px;
+    }
+            
+    .max{
+        font-size: 7px;
+    }
+
+    .star-main1{
+        justify-content: inline-block;
+    }
+
+    .star-main2{
+        justify-content: inline-block;
+    }
+
+    #w3-button {
+        display: block;
+        margin: auto;
+        padding: 0px 4px;
+    }
+
+    .title h1{
+        font-size: 10px;
+    }
+
+    .des p{
+        font-size: 5px;
+        margin-bottom: 1px;
+    }
+
+    .des button{
+        padding: 0px;
+        font-size: 5px;
+    }
+
+    .head{
+        font-size: 15px;
+    }
+
+    .mid{
+        font-size: 10px;
+    }
+
+    .column {
+        float: left;
+        width: 30%;
+        padding: 0px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .btn{
+        padding: 0px,10px;
+    }
+
+    .text-white{
+        font-size: 10px;
+        align-items: center;
+    }
+
+
+}
+
+
+/*--Large Mobiles--*/
+
+@media(max-width: 425px) and (min-width: 375px){
+
+
+    .background{
+        height: 60vh;
+    }
+
+    .text-big{
+        font-size: 10px;
+    }
+
+    .text-small{
+        font-size: 7px;
+    }
+
+    .btn1{
+        padding: 0px,5px;
+    }
+
+    .heading{
+        font-size: 27px;
+        margin-bottom: -12px;
+    }
+
+    .Explain{
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    
+    .paras{
+        margin-top: 9px;
+    }
+
+    .parag p{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .min{
+        font-size: 10px;
+    }
+
+    .max{
+        font-size: 7px;
+    }
+
+    .star-main1{
+        justify-content: inline-block;
+        width: auto;
+    }
+
+    .star-main2{
+        justify-content: inline-block;
+        width: auto;
+    }
+
+    .star-main3{
+        justify-content: inline-block;
+        width: auto;
+    }
+
+    .star-main4{
+        justify-content: inline-block;
+        width: auto;
+    }
+
+    #w3-button {
+        display: block;
+        margin: auto;
+        padding: 0px 4px;
+    }
+
+    .title h1{
+        font-size: 13px;
+    }
+
+    .des p{
+        font-size: 7px;
+        margin-bottom: 1px;
+    }
+
+    .des button{
+        padding: 3px;
+        font-size: 8px;
+    }
+
+    .head{
+        font-size: 18px;
+    }
+
+    .mid{
+        font-size: 11px;
+    }
+
+    
+    .column {
+        float: left;
+        width: 30%;
+        padding: 0px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .btn{
+        padding: 0px,10px;
+    }
+
+    .text-white{
+        font-size: 13px;
+        align-items: center;
+    }
+
+}
+
+
+/*--Tablets--*/
+
+
+@media(max-width: 768px) and (min-width: 425px){
+
+
+    .background{
+        height: 75vh;
+    }
+
+    .text-big{
+        font-size: 17px;
+    }
+
+    .text-small{
+        font-size: 10px;
+    }
+
+    .heading{
+        font-size: 28px;
+        margin-bottom: -13px;
+    }
+
+    .Explain{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .paras{
+        margin-top: 9px;
+    }
+
+    .parag p{
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .min{
+        font-size: 12px;
+    }
+
+    .max{
+        font-size: 10px;
+    }
+
+    .star-main1{
+        justify-content: inline-block;
+        width: auto;
+    }
+
+    .star-main2{
+        justify-content: inline-block;
+        width: auto;
+    }
+
+    .star-main3{
+        justify-content: inline-block;
+        width: auto;
+    }
+
+    .star-main4{
+        justify-content: inline-block;
+        width: auto;
+    }
+
+    
+    .title h1{
+        font-size: 17px;
+    }
+
+    .des p{
+        font-size: 12px;
+        margin-bottom: 1px;
+    }
+
+    
+    .des button{
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    .head{
+        font-size: 22px;
+    }
+
+    .mid{
+        font-size: 13px;
+    }
+
+    .column {
+        float: left;
+        width: 30%;
+        padding: 0px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: auto;
+        width: cover;
+    }
+
+}
+
+
+/*--Laptops--*/
+
+@media(max-width: 1024px) and (min-width: 768px){
+
+    .background{
+        height: 100vh;
+    }
+
+    .text-big{
+        font-size: 19px;
+    }
+
+    .text-small{
+        font-size: 11px;
+    }
+
+    
+    .heading{
+        font-size: 30px;
+        margin-bottom: -20px;
+    }
+
+    .Explain{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .parag p{
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+/*--Large Laptops--*/
+
+@media(max-width:1440px) and (min-width: 1024px){
+
+
+
+    .background{
+        height: 100vh;
+    }
+
+    .text-big{
+        font-size: 25px;
+    }
+
+    .text-small{
+        font-size: 15px;
+    }
+
+    .heading{
+        font-size: 37px;
+        margin-bottom: -20px;
+    }
+
+    .Explain{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .parag p{
+        font-size: 27px;
+        margin-bottom: 1rem;
+    }
+
+    .head{
+        font-size: 35px;
+    }
+
+    .mid{
+        font-size: 25px;
+    }
+
+    .text-white{
+        font-size: 25px;
+    }
+
+}
+
+/*--4K Screens--*/
+
+@media(max-width: 2560px) and (min-width: 1440px){
+
+
+    .background{
+        height: 100vh;
+    }
+    
+    .text-big{
+        font-size: 40px;
+    }
+
+    .text-small{
+        font-size: 30px;
+    }
+
+    .heading{
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+
+    .Explain{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .parag p{
+        font-size: 43px;
+        margin-bottom: 2rem;
+    }
+
+    .head{
+        font-size: 50px;
+    }
+
+    .mid{
+        font-size: 35px;
+    }
+
+    .text-white{
+        font-size: 35px;
+    }
+
+
+
+}
